@@ -1,0 +1,12 @@
+{
+  "extends": "@halvaradop/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/.source": [".source"]
+    }
+  },
+  "include": ["src/**/*", "**/*.ts", "**/*.tsx", "next-env.d.ts"],
+  "exclude": ["node_modules", "dist", "build"]
+}
