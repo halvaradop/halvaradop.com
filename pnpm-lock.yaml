@@ -36,6 +36,9 @@ importers:
       '@halvaradop/prettier-config':
         specifier: ^1.2.1
         version: 1.2.1(prettier@3.6.2)
+      '@halvaradop/tailwindcss-utilities':
+        specifier: ^1.0.0
+        version: 1.0.0
       '@halvaradop/tsconfig':
         specifier: ^1.2.1
         version: 1.2.1(typescript@5.9.3)
@@ -300,6 +303,9 @@ packages:
     resolution: {integrity: sha512-53wJj3hx/lbZAwvPhhizQ9FdljikLrAR5yASgxsg6mn24Py/lff+9ZvrUYB1ttwBuyUfZSsVIvtQlBTUxTU5BQ==}
     peerDependencies:
       prettier: ^3.0.0
+
+  '@halvaradop/tailwindcss-utilities@1.0.0':
+    resolution: {integrity: sha512-tWohTj+ppgLXdXDd6HE8vd9gtg6WluBExaAjA3wGW1HkTBOXjG2/ThKxeq1AiwvaXK+QXv+mgK5OSXGnLnMJqg==}
 
   '@halvaradop/tsconfig@1.2.1':
     resolution: {integrity: sha512-bmxXijTbgCxEy7nNCA4cIQfqPetPVA+4SVBKP0wC6e8o5EwTv3MLzu1UsHXPt2oSaRN1/SlaKYWYkZia8xNF4w==}
@@ -3083,6 +3089,8 @@ snapshots:
   '@halvaradop/prettier-config@1.2.1(prettier@3.6.2)':
     dependencies:
       prettier: 3.6.2
+
+  '@halvaradop/tailwindcss-utilities@1.0.0': {}
 
   '@halvaradop/tsconfig@1.2.1(typescript@5.9.3)':
     dependencies:
