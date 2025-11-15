@@ -1,10 +1,11 @@
 import { ExperienceInfo } from "./experience-info"
+import { TitleSection } from "./title"
 
 export const Experience = () => {
     return (
-        <section>
-            <h2 className="text-xl">Experience</h2>
-            <ul className="mt-2 space-y-6">
+        <section id="experience">
+            <TitleSection title="Experience" />
+            <ul className="w-11/12 mx-auto p-3 px-4 space-y-6 border-x border-solid border-black-v2 lg:w-7/12">
                 <ExperienceInfo
                     company="Auth.js"
                     duration="June 2024 - Present"

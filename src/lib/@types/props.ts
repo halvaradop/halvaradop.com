@@ -26,3 +26,13 @@ export interface EducationInfoProps {
     degree: string
     duration: string
 }
+
+export interface TitleSectionProps {
+    title: string
+    subtitle?: string
+    link?: string
+}
+
+export interface DividerProps {
+    length: number
+}

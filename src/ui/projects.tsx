@@ -1,13 +1,14 @@
 import { Project } from "./project"
+import { TitleSection } from "./title"
 
 export const Projects = () => {
     return (
-        <section>
-            <h2 className="text-xl">Projects</h2>
-            <p className="mt-2 text-gray text-sm">
-                Some of the projects I have worked from packages to open source contributions .
-            </p>
-            <div className="mt-2 grid md:grid-cols-2 md:gap-5">
+        <section id="projects">
+            <TitleSection
+                subtitle="Some of the projects I have worked from packages to open source contributions."
+                title="Projects"
+            />
+            <div className="w-11/12 mx-auto grid divide-y border-x border-solid border-black-v2 md:grid-cols-2 lg:w-7/12">
                 <Project
                     description="Contribute to the Adoption of Auth.js to the JavaScript ecosystem, including reducing onboarding time for new users and adding new OAuth and OIDC providers such as Bitbucket and Figma to the core library, giving new authentication providers to the community."
                     duration="June 2024 - Present"

@@ -7,7 +7,7 @@ import { Leetcode } from "@/ui/leetcode"
 
 const IndexPage = () => {
     return (
-        <section className="w-11/12 py-26 mx-auto max-w-3xl space-y-10">
+        <section className="divide-b border-solid border-black-v2">
             <Header />
             <About />
             <Experience />

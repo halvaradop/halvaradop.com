@@ -3,7 +3,7 @@ import { ButtonLink } from "./button-link"
 
 export const Project = ({ title, duration, description, technologies, repo, link }: ProjectProps) => {
     return (
-        <article className="p-2 py-3 flex flex-col ">
+        <article className="p-5 flex flex-col md:odd:border-r md:nth-[5]:border-b-0">
             <div className="mb-2">
                 <h3 className="font-semibold">{title}</h3>
                 <p className="mt-1 mb-1.5 text-sm">{duration}</p>

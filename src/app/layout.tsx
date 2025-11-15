@@ -9,7 +9,7 @@ const inter = Inter({
 const Layout = ({ children }: LayoutProps<"/">) => {
     return (
         <html lang="en" className={inter.className} suppressHydrationWarning>
-            <body className="flex flex-col min-h-screen bg- scrollbar:w-1.5 track:rounded-2xl thumb:bg-gray/30">
+            <body className="flex flex-col min-h-screen bg-black scrollbar:w-1.5 thumb:rounded-2xl thumb:bg-gray/30">
                 <RootProvider>{children}</RootProvider>
             </body>
         </html>
