@@ -1,62 +1,75 @@
 import { Project } from "./project"
 import { TitleSection } from "./title"
+import { Card } from "@halvaradop/ui-card"
 
 export const Projects = () => {
     return (
         <section id="projects">
-            <TitleSection
-                subtitle="Some of the projects I have worked from packages to open source contributions."
-                title="Projects"
-            />
-            <div className="w-11/12 mx-auto grid divide-y border-x border-solid border-black-v2 md:grid-cols-2 lg:w-7/12">
+            <TitleSection title="Projects">
+                <span className="w-[7px] h-px absolute -top-px -left-px bg-cross" />
+                <span className="w-px h-[7px] absolute -top-px -left-px bg-cross" />
+                <span className="w-[7px] h-px absolute -top-px -right-px bg-cross" />
+                <span className="w-px h-[7px] absolute -top-px -right-px bg-cross" />
+
+                <span className="w-[7px] h-px absolute -bottom-[0.7px] -left-px bg-cross" />
+                <span className="w-px h-2.5 absolute -bottom-1.5 -left-px bg-cross" />
+                <span className="w-[7px] h-px absolute -bottom-[0.7px] -right-px bg-cross" />
+                <span className="w-px h-2.5 absolute -bottom-1.5 -right-px bg-cross" />
+            </TitleSection>
+            <Card className="dimention-card p-0 grid divide-y border-y-0  md:grid-cols-2">
                 <Project
-                    description="Contribute to the Adoption of Auth.js to the JavaScript ecosystem, including reducing onboarding time for new users and adding new OAuth and OIDC providers such as Bitbucket and Figma to the core library, giving new authentication providers to the community."
-                    duration="June 2024 - Present"
-                    link="https://authjs.dev/"
-                    repo="https://github.com/nextauthjs/next-auth"
-                    technologies={["Auth.js", "TypeScript", "Next.js", "TailwindCSS", "Nextra", "Framer Motion"]}
-                    title="Auth.js (next-auth)"
-                />
-                <Project
-                    description="Open Source authentication and authorization library for modern TypeScript applications. It provides a flexible and secure way to handle user authentication."
+                    description="A modular, framework-agnostic authentication library inspired by Auth.js, designed to implement secure and fully type-safe OAuth 2.0 flows using a robust cookie-based strategy."
                     duration="October 2025 - Present"
+                    image="/aura-auth.png"
                     link="https://aura-stack-auth.vercel.app/docs"
                     repo="https://github.com/aura-stack-ts/auth"
-                    technologies={["Aura Stack Auth", "TypeScript", "Next.js", "Fumadocs", "Turborepo", "Zod"]}
+                    technologies={["Aura Stack Auth", "TypeScript", "Next.js", "Fumadocs", "Zod", "Turborepo"]}
                     title="Aura Stack Auth"
                 />
                 <Project
-                    description="It is a modern, TypeScript-first router and endpoint definition library for TypeScript backends that provides support for Next.js, Nuxt, Sveltekit and more."
+                    description="A modern, TypeScript-first router and endpoint definition library that provides automatic type inference and first-class middleware composition. Ensures seamless compatibility with Next.js, Nuxt, and SvelteKit by returning native Response objects."
                     duration="October 2025 - Present"
+                    image="/aura-router.png"
                     link="https://aura-stack-router.vercel.app/docs"
                     repo="https://github.com/aura-stack-ts/router"
-                    technologies={["TypeScript", "Next.js", "Fumadocs", "Zod"]}
+                    technologies={["Aura Stack Router", "TypeScript", "Next.js", "Zod", "Fumadocs"]}
                     title="Aura Stack Router"
                 />
                 <Project
-                    description="A powerful collection of utility types designed to enhance your TypeScript development experience. all built from scratch without relying on TypeScript's built-in utility types."
+                    description="A preset of utility classes (animations/utilities) designed to efficiently extend default Tailwind behavior. Demonstrates specialized knowledge in CSS frameworks and front-end styling optimization."
                     duration="November 2024 - Present"
+                    image="/tailwindcss-utilities.png"
+                    link="https://tailwindcss-utilities.vercel.app/"
+                    repo="https://github.com/halvaradop/tailwindcss-utilities"
+                    technologies={["TypeScript", "Next.js", "TailwindCSS", "Postcss", "Autoprefixer", "Turborepo"]}
+                    title="TailwindCSS Utilities"
+                />
+                <Project
+                    description="A lightweight package publishing 70+ advanced TypeScript utilities for deep object transforms and numeric/string logic. Drastically improves autocomplete, inference accuracy, and developer confidence  in large TypeScript codebases."
+                    duration="November 2024 - Present"
+                    image="/utility-types.png"
                     link="https://ts-utility-types.vercel.app/docs"
                     repo="https://github.com/halvaradop/ts-utility-types"
-                    technologies={["TypeScript"]}
+                    technologies={["TypeScript", "Next.js", "Fumadocs", "Tsup", "Vitest", "Prettier", "ESLint"]}
                     title="Utility Types"
                 />
                 <Project
-                    description="A collection of reusable components for React, styled with Tailwind CSS. It simplifies the development of modern and responsive interfaces."
+                    description="Created a reusable, themeable component library of 10+ accessible, composable components using advanced patterns (Slot, Compound, Dot). Integrated Turborepo to optimize workflows and reduce build times by 30%."
                     duration="November 2024 - Present"
+                    image="/ui-library.png"
                     repo="https://github.com/halvaradop/ui"
-                    technologies={["React", "TypeScript", "TailwindCSS", "cva", "Turborepo", "Storybook"]}
-                    title="UI"
+                    technologies={["TypeScript", "React", "TailwindCSS", "cva", "Turborepo", "Storybook"]}
+                    title="React Component Library"
                 />
                 <Project
-                    description="Open source TailwindCSS utilities offering a series of tools and plugins to enhance development with TailwindCSS.."
-                    duration="November 2024 - Present"
-                    link="https://tailwindcss-utilities.vercel.app/"
-                    repo="https://github.com/halvaradop/tailwindcss-utilities"
-                    technologies={["Next.js", "MDX", "TypeScript", "TailwindCSS", "Postcss", "Autoprefixer", "Turborepo"]}
-                    title="TailwindCSS Utilities"
+                    description="Collection of 10+ common React hooks for efficient component logic abstraction."
+                    duration="January 2025 - Present"
+                    image="/hooks.png"
+                    repo="https://github.com/halvaradop/hooks"
+                    technologies={["TypeScript", "React", "Hooks", "Tsup", "ESLint", "State", "Context API"]}
+                    title="Hooks"
                 />
-            </div>
+            </Card>
         </section>
     )
 }

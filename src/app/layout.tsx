@@ -8,8 +8,8 @@ const inter = Inter({
 
 const Layout = ({ children }: LayoutProps<"/">) => {
     return (
-        <html lang="en" className={inter.className} suppressHydrationWarning>
-            <body className="flex flex-col min-h-screen bg-black scrollbar:w-1.5 thumb:rounded-2xl thumb:bg-gray/30">
+        <html lang="en" className={`${inter.className} scroll-smooth`} suppressHydrationWarning>
+            <body className="flex flex-col min-h-screen bg-primary scrollbar:w-1.5 thumb:rounded-2xl thumb:bg-gray/30">
                 <RootProvider>{children}</RootProvider>
             </body>
         </html>

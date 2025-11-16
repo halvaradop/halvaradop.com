@@ -2,15 +2,12 @@ import type { PropsWithChildren } from "react"
 
 export interface ProjectProps {
     title: string
+    image?: string
     duration: string
     description: string
     technologies?: string[]
     repo?: string
     link?: string
-}
-
-export interface ButtonLinkProps extends PropsWithChildren {
-    href: string
 }
 
 export interface ExperienceInfoProps {
@@ -27,12 +24,8 @@ export interface EducationInfoProps {
     duration: string
 }
 
-export interface TitleSectionProps {
+export interface TitleSectionProps extends PropsWithChildren {
     title: string
     subtitle?: string
     link?: string
-}
-
-export interface DividerProps {
-    length: number
 }

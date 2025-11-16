@@ -1,19 +1,21 @@
 import { Header } from "@/ui/header"
 import { About } from "@/ui/about"
 import { Experience } from "@/ui/experience"
-import { Education } from "@/ui/education"
 import { Projects } from "@/ui/projects"
 import { Leetcode } from "@/ui/leetcode"
+import { Footer } from "@/ui/footer"
+import { Hero } from "@/ui/hero"
 
 const IndexPage = () => {
     return (
-        <section className="divide-b border-solid border-black-v2">
+        <section>
             <Header />
+            <Hero />
+            <Projects />
             <About />
             <Experience />
-            <Projects />
-            <Education />
             <Leetcode />
+            <Footer />
         </section>
     )
 }
