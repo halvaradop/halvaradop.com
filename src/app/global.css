@@ -1,3 +1,33 @@
 @import "tailwindcss";
 @import "fumadocs-ui/css/neutral.css";
 @import "fumadocs-ui/css/preset.css";
+@import "@halvaradop/tailwindcss-utilities";
+@source "../../node_modules/@halvaradop/ui-button";
+@source "../../node_modules/@halvaradop/ui-card";
+
+@theme {
+    --breakpoint-base: 900px;
+    --color-border: hsl(240 3.33% 11.76%);
+
+    --color-primary: hsl(0, 0%, 7%);
+    --color-gray: hsl(240, 5%, 64.9%);
+    --color-cross: hsl(0deg 0% 100% / 10%);
+
+    --opacity-cursor: 80%;
+    --size-sm: 1.75rem;
+    --size-base: 2.25rem;
+    --size-md: 2.75rem;
+    --size-lg: 3.25rem;
+}
+
+.dimention-card {
+    @apply w-11/12 mx-auto shadow-none md:w-4/5 xl:max-w-250;
+}
+
+#projects div:has(:hover) article:not(:hover) {
+    opacity: 0.3;
+}
+
+#projects div:has(:hover) article:hover {
+    background-color: hsl(220deg 6.38% 9.22%);
+}

@@ -15,6 +15,9 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@halvaradop/ui-button": "^1.0.0",
+    "@halvaradop/ui-card": "^1.0.0",
+    "@halvaradop/ui-core": "^1.0.1",
     "fumadocs-core": "16.0.8",
     "fumadocs-mdx": "13.0.5",
     "fumadocs-ui": "16.0.8",
@@ -26,6 +29,7 @@
   "devDependencies": {
     "@halvaradop/eslint-config": "latest",
     "@halvaradop/prettier-config": "^1.2.1",
+    "@halvaradop/tailwindcss-utilities": "^1.0.0",
     "@halvaradop/tsconfig": "^1.2.1",
     "@tailwindcss/postcss": "^4.1.16",
     "@types/mdx": "^2.0.13",

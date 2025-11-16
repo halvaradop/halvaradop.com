@@ -1,16 +1,23 @@
-import Link from "next/link"
+import { Header } from "@/ui/header"
+import { About } from "@/ui/about"
+import { Experience } from "@/ui/experience"
+import { Projects } from "@/ui/projects"
+import { Leetcode } from "@/ui/leetcode"
+import { Footer } from "@/ui/footer"
+import { Hero } from "@/ui/hero"
 
-export default function HomePage() {
+const IndexPage = () => {
     return (
-        <div className="flex flex-col justify-center text-center flex-1">
-            <h1 className="text-2xl font-bold mb-4">Hello World</h1>
-            <p>
-                You can open{" "}
-                <Link href="/docs" className="font-medium underline">
-                    /docs
-                </Link>{" "}
-                and see the documentation.
-            </p>
-        </div>
+        <section>
+            <Header />
+            <Hero />
+            <Projects />
+            <About />
+            <Experience />
+            <Leetcode />
+            <Footer />
+        </section>
     )
 }
+
+export default IndexPage
