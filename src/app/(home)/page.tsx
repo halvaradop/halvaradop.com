@@ -1,22 +1,18 @@
-import { Header } from "@/ui/header"
-import { About } from "@/ui/about"
-import { Experience } from "@/ui/experience"
-import { Projects } from "@/ui/projects"
-import { Leetcode } from "@/ui/leetcode"
-import { Footer } from "@/ui/footer"
-import { Hero } from "@/ui/hero"
+import { About } from "@/components/about"
+import { Experience } from "@/components/experience"
+import { OpenSource } from "@/components/open-source"
+import { Projects } from "@/components/projects"
+import { Hero } from "@/components/hero"
 
 const IndexPage = () => {
     return (
-        <section>
-            <Header />
+        <main className="mt-10 relative z-10 space-y-20">
             <Hero />
-            <Projects />
             <About />
             <Experience />
-            <Leetcode />
-            <Footer />
-        </section>
+            <OpenSource />
+            <Projects />
+        </main>
     )
 }
 
